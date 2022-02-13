@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", "Segoe UI", sans-serif;
+  }
+
+  *:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+    --p-size: 15px;
+
+    --radius: 1rem;
+    --component-padding: 1.2rem;
+    --copy-margin: 1rem;
+  }
+
+h1 {
+  text-align: center;
+  border-radius: var(--radius);
+}
+
+p {
+  text-align: center;
+  border-radius: var(--radius);
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: var(--copy-margin) auto;
+    color: var(--Dark-blue);
+  }
+
+  p {
+    font-size: var(--p-size);
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    margin-bottom: var(--copy-margin);
+  }
+
+  a {
+    color: hsl(322, 86%, 40%);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    background-color: var(--Light-gray);
+  }
+
+  .component {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 320px;
+    background-color: var(--White);
+    padding: var(--component-padding);
+    font-family: "Outfit", "Segoe UI", sans-serif;
+    border-radius: var(--radius);
+    box-shadow: 0 0.2rem rem 0.1rem rgba(0, 0, 0, 0.1);
+  }
